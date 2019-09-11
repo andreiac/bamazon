@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>BAMAZON</title>
+</head>
+
+<body>
+    <h1>Products Page!</h1>
+
+    <a href=http://127.0.0.1:7510/home>Home page</a> 
+    
+</body> 
+
+    <script>
+        
+        function addToCart(event) {
+            console.log("addToCart() works");
+            var checkBox = JSON.stringify(event);
+            var myCheckBox = document.getElementById(event).innerHTML;
+            var confirmation = "Do you want to add " +myCheckBox+ "to your cart?"
+            confirm(confirmation);
+            console.log(myCheckBox)
+            if (true) {
+                alert(myCheckBox + " added to cart!");
+                
+            }
+        }
+    </script>
+
+</html>
