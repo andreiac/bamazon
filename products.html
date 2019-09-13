@@ -24,7 +24,7 @@
             var myCheckBox = document.getElementById(event).innerHTML;
             var confirmation = "Do you want to add " +myCheckBox+ "to your cart?"
             confirm(confirmation);
-            console.log(myCheckBox)
+            console.log(event.product_name);
             if (true) {
                 alert(myCheckBox + " added to cart!");
                 
